@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VICJO</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="" type="icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="register.js"></script>
+        <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yT8z4z5e5b5e5b5e5b5e5b5e5b5b5b5b5=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+4fXwFfDOM5z5e5b5e5b5b5b5b5b5b5b5b5b5b5b5b5b5" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAq6z5l5b5b5b5b5b5b5b5b5b5b5" crossorigin="anonymous"></script>
+        <!-- Para conectar con PHP, normalmente se usan formularios HTML que envían datos mediante POST o GET.
+            Aquí puedes agregar un formulario y especificar el archivo PHP en el atributo 'action'. 
+            Además, puedes eliminar los botones con onclick y usar botones de tipo submit. 
+            Ejemplo de inclusión de PHP (esto va en el body, pero aquí puedes poner un comentario): -->
+        <!-- <form action="login.php" method="POST"> ... </form> -->
+
+        <!-- Si necesitas usar AJAX para enviar datos a PHP sin recargar la página, puedes agregar un script aquí. -->
+
+    </head>
+    <body>
+<!-- <form id="registerForm">
+    <input type="text" name="user" id="user" required>
+    <input type="password" name="password" id="password" required>
+    <button type="submit">Registrar</button>
+</form>
+<script src="register.js"></script>
+ -->
+        <form id="" action="register.js">
+        <fieldset>
+            <h1>Register</h1>
+
+                <label for="">Nuevo Usuario</label>
+                <input type="text" placeholder="Ingrese su usuario" name="newUser" required>
+
+                <label for="">Nueva Contraseña</label>
+                <input type="password" id="password" name="newPassword" required>
+
+                <label for="">Repetir Contraseña</label>
+                <input type="password" id="repeatPassword" name="repeatPassword" required>
+
+                <input type="button" value="Registrarse" id="register" onclick="register()">
+                <button type="submit">Registrarse</button>
+        </fieldset>
+        </form>
+    </body>
+</html>
