@@ -1,4 +1,4 @@
-<!-- Commits: 02 -->
+<!-- Commits: 03 -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -27,7 +27,7 @@
                         </div>
                         <button type="submit" class="btn-login">Iniciar sesión</button>
 
-                        <button type="button" class="btn-register" value="" onclick="location.href='register.html'">Registrarse</button>
+                        <button type="button" class="btn-register" value="" onclick="location.href='register.php'">Registrarse</button>
                     </fieldset>
                 </form>
             </div>
