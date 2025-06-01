@@ -1,4 +1,4 @@
-<!-- Commits: 03 -->
+<!-- Commits: 04 -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -13,8 +13,9 @@
     </head>
     <body>
         <header">
+        <section class="register">
             <div class="register">
-                <form action="send.php" method="post">
+                <form action="send.php" method="post" autocomplete="off">
                     <fieldset>
                         <legend>Registrarse</legend>
                         <div class="input-container">
@@ -30,13 +31,16 @@
                             <input type="password" id="confirmpassword" name="confirmpassword" required>
 
                         </div>
-                        <button type="button" class="btn-register" onclick="myFunction()" onclick="location.href='index.html'">Registrarse</button>                        
+                        <button type="button" name="send" class="btn-register" onclick="myFunction()">Registrarse</button>                        
                     </fieldset>
                 </form>
             </div>
+        </section>
         </header>
         <?php
             include("send.php")
+            include("conexion.php");
+            include("controlador.php");
         ?>
 
         <script>

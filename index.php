@@ -1,4 +1,4 @@
-<!-- Commits: 03 -->
+<!-- Commits: 04 -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -13,8 +13,9 @@
     </head>
     <body>
         <header">
+        <section class="login">
             <div class="login">
-                <form action="send.php" method="get">
+                <form action="send.php" method="post">
                     <fieldset>
                         <legend>Iniciar Sesión</legend>
                         <div class="input-container">
@@ -27,13 +28,16 @@
                         </div>
                         <button type="submit" class="btn-login">Iniciar sesión</button>
 
-                        <button type="button" class="btn-register" value="" onclick="location.href='register.php'">Registrarse</button>
+                        <button name="btn-ingresar" type="button" class="btn-register" value="INICIAR SESION" onclick="location.href='register.php'">Registrarse</button>
                     </fieldset>
                 </form>
             </div>
+        </section>
         </header>
         <?php
             include("send.php")
+            include("conexion.php");
+            include("controlador.php");
         ?>
 
         <script>
