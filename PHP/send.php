@@ -9,9 +9,10 @@ if(isset($_POST['send'])) {
     ){
         $username = trim($_POST['username']);
         $password = trim($_POST['password']);
+        $password = trim($_PSOT['confirmpassword'])
 
-        $query = "INSERT INTO users(username, password) VALUES ('$username', '$password')";
-        $result = mysqli_query($conexion, $query);
+        $query = "INSERT INTO users(username, password) VALUES ('$username', '$password', '$confirmpassword')";
+        $result = mysqli_query($conexion, $register);
 
         if($result) {
             ?>
@@ -22,5 +23,6 @@ if(isset($_POST['send'])) {
             <h3 class="bad">Error registering user!</h3>
             <?php
     }
+}
 }
 ?>

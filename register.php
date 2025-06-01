@@ -1,4 +1,4 @@
-<!-- Commits: 01 -->
+<!-- Commits: 02 -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -13,10 +13,10 @@
     </head>
     <body>
         <header">
-            <div class="login">
-                <form action="send.php" method="get">
+            <div class="register">
+                <form action="send.php" method="post">
                     <fieldset>
-                        <legend>Iniciar Sesión</legend>
+                        <legend>Registrarse</legend>
                         <div class="input-container">
                             <label for="username">Usuario:</label>
                             <input type="text" id="username" name="username" required>
@@ -25,9 +25,12 @@
                             <label for="password">Contraseña:</label>
                             <input type="password" id="password" name="password" required>
                         </div>
-                        <button type="submit" class="btn-login">Iniciar sesión</button>
+                        <div class="input-container">
+                            <label for="email">Confirmar Contraseña:</label>
+                            <input type="password" id="confirmpassword" name="confirmpassword" required>
 
-                        <button type="button" class="btn-register" value="" onclick="location.href='register.html'">Registrarse</button>
+                        </div>
+                        <button type="button" class="btn-register" onclick="myFunction()" onclick="location.href='index.html'">Registrarse</button>                        
                     </fieldset>
                 </form>
             </div>
